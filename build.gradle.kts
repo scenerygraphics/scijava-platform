@@ -1,5 +1,7 @@
 plugins { `java-platform` }
 
+group = "sciJava.platform"
+
 dependencies {
     constraints {
         api(imagej.bundles.base)
