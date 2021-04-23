@@ -47,7 +47,7 @@ dependencies {
 }
 
 group = "sciJava"
-version = "30.0.0+7"
+version = "30.0.0+10"
 
 publishing {
     publications.create<MavenPublication>("maven") {
