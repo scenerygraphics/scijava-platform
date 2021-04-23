@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.6" />
+    <bytecodeTargetLevel target="11">
+      <module name="sciJava-catalogs" target="11" />
+      <module name="sciJava-catalogs.functionalTest" target="11" />
+      <module name="sciJava-catalogs.main" target="11" />
+      <module name="sciJava-catalogs.test" target="11" />
+      <module name="sciJava-platform.buildSrc" target="11" />
+      <module name="sciJava-platform.buildSrc.main" target="11" />
+      <module name="sciJava-platform.buildSrc.test" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

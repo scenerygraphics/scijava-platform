@@ -1,14 +1,12 @@
-plugins {
-    `java-platform`
-    `maven-publish`
-}
+import org.gradle.api.artifacts.DependencyConstraint
+import org.gradle.api.artifacts.dsl.DependencyConstraintHandler
+import org.gradle.kotlin.dsl.dependencies
 
 dependencies {
 
-
     constraints {
 
-        fun api(constraintNotation: Any): DependencyConstraint = add("api", constraintNotation)
+        fun api(constraintNotation: Any): DependencyConstraint? = add("api", constraintNotation)
 
         api(sciJava.bundles.all)
         api(imagej.bundles.all)
@@ -44,21 +42,5 @@ dependencies {
         api(jmh.bundles.all)
 
         api(misc.bundles.all)
-    }
-}
-
-group = "sciJava"
-version = "30.0.0+7"
-
-publishing {
-    publications.create<MavenPublication>("maven") {
-        artifactId = "platform"
-        from(components["javaPlatform"])
-        suppressPomMetadataWarningsFor("runtimeElements")
-    }
-    repositories {
-        maven {
-            url = uri("$rootDir/../mary")
-        }
     }
 }
