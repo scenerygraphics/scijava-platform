@@ -7,10 +7,7 @@ group = "sciJava.platform"
 
 dependencies {
 
-
     constraints {
-
-        fun api(constraintNotation: Any): DependencyConstraint = add("api", constraintNotation)
 
         api(sciJava.bundles.all)
         api(imagej.bundles.all)
