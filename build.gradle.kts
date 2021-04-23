@@ -3,6 +3,8 @@ plugins {
     `maven-publish`
 }
 
+group = "sciJava.platform"
+
 dependencies {
 
 
