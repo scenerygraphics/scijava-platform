@@ -1,3 +1,6 @@
+
+package sciJava
+
 import org.gradle.accessors.dm.*
 import org.gradle.kotlin.dsl.`java-library`
 
@@ -41,7 +44,7 @@ val junit5 = the<LibrariesForJunit5>()
 val jmh = the<LibrariesForJmh>()
 val misc = the<LibrariesForMisc>()
 
-println("platform")
+//println("platform")
 
 dependencies {
 
