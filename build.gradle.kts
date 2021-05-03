@@ -1,6 +1,6 @@
 plugins {
     `java-platform`
-    `maven-publish`
+//    `maven-publish`
 }
 
 group = "sciJava.platform"
@@ -49,15 +49,15 @@ dependencies {
 group = "sciJava"
 version = "30.0.0+13"
 
-publishing {
-    publications.create<MavenPublication>("maven") {
-        artifactId = "platform"
-        from(components["javaPlatform"])
-        suppressPomMetadataWarningsFor("runtimeElements")
-    }
-    repositories {
-        maven {
-            url = uri("$rootDir/../mary")
-        }
-    }
-}
+//publishing {
+//    publications.create<MavenPublication>("maven") {
+//        artifactId = "platform"
+//        from(components["javaPlatform"])
+//        suppressPomMetadataWarningsFor("runtimeElements")
+//    }
+//    repositories {
+//        maven {
+//            url = uri("$rootDir/../mary")
+//        }
+//    }
+//}
